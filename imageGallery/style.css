@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 50%;
+    border-radius: 5px;
+}
+
+.img-container {
+    margin: 10px auto;
+    max-width: 80%;
+    border: 2px dotted green;
+}
+
+.photos {
+    display: flex;
+    justify-content: center;
+}
+
+.photos img {
+    width: 300px;
+}
+
+ul {
+    margin: 10px;
+}
+
+ul li {
+    list-style-type: none;
+    border: 2px solid red;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+ul li img {
+    max-width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+p {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* Media query for devices with a maximum width of 576 pixels */
+/* @media only screen and (max-width: 576px) {
+    .photos {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .photos img { */
+        /* Adjust the image width to fit the screen */
+        /* width: 100%;
+    }
+} */
+
+/* Add your existing styles here */
+
+@media only screen and (max-width: 576px) {
+    .img-container {
+        width: 90%; /* Reduce the width of the container for smaller devices */
+    }
+    
+    .photos {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap; /* Allow images to wrap to the next line on small devices */
+    }
+
+    .photos img {
+        width: 100%; /* Make images take the full width of their container on small devices */
+        /* max-width: none;  */
+    }
+    
+    ul li {
+        width: calc(50% - 10px); /* Make each thumbnail take half of the container's width with some margin */
+    }
+}
+
