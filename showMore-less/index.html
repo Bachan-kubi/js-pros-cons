@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice show More and Less</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="text">
+      <h2>Practice show More and less link</h2>
+      <h4>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea iure optio
+        labore consectetur pariatur. <a href="#" id="more" onclick="more()">...read more!</a>
+      </h4>
+      <h4 id="content" class="content-hidden">
+        Slow lorises are a group of several species of trepsirrhine primates which make up the genus Nycticebus. They have a round head, narrow snout, large eyes, and a variety of distinctive coloration patterns that are species-dependent. The hands and feet of slow lorises have several adaptations that give them a pincer-like grip and enable them to grasp branches for long periods of time. Slow lorises have a toxic bite, a rare trait among mammals.
+        <a href="#" id="less" onclick="less()">Show Less</a>
+      </h4>
+    </div>
+
+    <div class="txt">
+      <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, magni?
+      </h2>
+      <h2 id="more-content" class="txt-hidden">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut asperiores alias libero voluptas excepturi nam accusamus fugiat, odit molestiae dolore aut nostrum dolorum eaque sed, fuga sunt dolor tenetur totam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis molestias a distinctio dolore, libero dolorem eveniet placeat ab ipsum provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus fuga harum quos praesentium quod dolorem doloribus exercitationem placeat deleniti commodi rem possimus atque dolores corrupti fugiat veniam sit, earum sed similique quam accusantium. Corporis quas ullam suscipit illo fuga? Ipsum cumque, expedita quasi veniam natus repudiandae cum nesciunt necessitatibus doloribus. </h2>
+      <a href="#" id="showMore" onclick="textMore()">...show more</a>
+      <a href="#" id="showLess" onclick="textLess()">show less</a>
+    </div>
+    <div class="third">
+      <p id="showFull">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        <a href="#" onclick="showText()" id="fullText"><em>..read more</em></a>
+        <a href="#" onclick="cutText()" id="lessText"><em>..read less</em></a>
+      </p>
+    </div>
+    <div>
+      <button onclick="nameList()">click to see names</button>
+      <h3 id="list" ></h3>
+    </div>
+    
+
+
+
+      
+
+    <script src="script.js"></script>
+  </body>
+</html>

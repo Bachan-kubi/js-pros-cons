@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.text{
+    margin: 20px auto;
+    width: 400px;
+    background-color: aquamarine;
+    padding: 25px;
+    text-align: justify;
+    border-radius: 5px;
+}
+.text>h2{
+    color: red;
+    text-decoration: underline;
+    text-align: center;
+}
+#less{
+    display: none;
+}
+
+
+/* to make the show more and less link smooth transition */
+
+.content-hidden {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+  }
+  .content-visible {
+    max-height: 100vh; /* Adjust the value as needed */
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+  }
+  a{
+    text-decoration: none;
+  }
+
+  /* second div */
+  .txt{
+    max-width: 400px;
+    margin: 10px auto;
+    background-color: coral;
+    padding: 15px;
+    color: white;
+  }
+  #showLess{
+    display: none;
+  }
+  /* #more-content{
+    display: none;
+  } */
+
+  .txt-hidden {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  .txt-visible {
+    max-height: 100vh;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  .third{
+    max-width: 400px;
+    padding: 10px;
+    margin: 20px auto;
+    color: rgb(97, 96, 96);
+    background-image: linear-gradient(to right, yellow, teal);
+  }
+  #lessText{
+    display: none;
+  }

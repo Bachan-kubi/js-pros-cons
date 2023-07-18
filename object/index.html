@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <h2>This is the objects.</h2>
+    <h2>Form validation</h2>
+
+    <!-- <form onsubmit="formValidation(event)">
+        <input type="text" name="name" placeholder="name...">
+        <input type="submit"></input>
+    </form> -->
+
+    <form onsubmit="formValidation(event)">
+        <input type="text" name="name" placeholder="name...">
+        <input type="email" name="email" placeholder="email...">
+        <input type="password" name="password" placeholder="password...">
+        <input type="submit">
+        <button>Button</button>
+    </form>
+
+    <h2>Drop Down Menu</h2>
+
+    <form onsubmit="handleDropdown(event)">
+        <select name="" id="country">
+            <option value="" selected="selected">Please select</option>
+            <option value="BD">Bangladesh</option>
+            <option value="IN">India</option>
+            <option value="NEP">Nepal</option>
+            <option value="PAK">Pakistan</option><br>
+        </select>
+        <input type="submit" value="Submit"></input>
+    </form>
+    <br><br>
+
+    <h2>Raido form validation</h2>
+    <form onsubmit="buttonHandle(event)">
+        <input type="radio" name="p" value="cat"> Cat <br>
+        <input type="radio" name="p" value="dog"> Dog <br>
+        <input type="radio" name="p" value="cow"> Cow <br>
+        <input type="radio" name="p" value="goat"> Goat <br>
+        <button>Button</button>
+    </form>
+
+
+
+    <!-- <form onSubmit="return checkForSelection();">
+        <select id="states">
+        <option value="" selected="selected">
+        SELECT A STATE</option>
+        <option value="AL">Alabama</option>
+        <option value="AK">Alaska</option>
+        <option value="AZ">Arizona</option>
+        <option value="AR">Arkansas</option>
+        </select>&nbsp;&nbsp;
+        <input type="submit" value="Submit Form">
+        </form> -->
+
+
+
+
+
+    <script src="main.js"></script>
+    <script src="constructor.js"></script>
+    <!-- <script src="constructorMethod.js"></script> -->
+    <script src="prototype.js"></script>
+    <script src="formValidation.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>events</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- inline event 
+    <a href="#" onclick="alert('please keep silent!')">click to show alert!</a>
+    <a href="#" onmouseover="alert('please keep silent!')">click to show alert!</a>
+    <a href="#" onmouseleave="alert('please keep silent!')">click to show alert!</a><br>
+    <a href="#" onmouseup="alert('please keep silent!')">click to show alert!</a>
+    <a href="#" onmousewheel="alert('please keep silent!')">click to show alert!</a>
+    <a href="#" onmouseleave="alert('please keep silent!')">click to show alert!</a> -->
+    <!-- <a href="JavaScript:void(0)" onclick="alert('keydown')">keydown</a>
+    <a href="JavaScript:void(0)" onclick="pop('Hi...')">keydown</a>
+    <h2 id="hi"></h2> -->
+
+    <input type="button" value="click" onclick="alert('hello')" />
+    <button onclick="alert('btn')">button</button>
+    <h2 id="hi"></h2>
+    <button onclick="pop('Button')">button</button>
+    <br /><br />
+    <h3>hotlink in button</h3>
+    <a href="event.html"><img src="bkk.jpg" alt="img" /></a>
+    <br />
+    <h3>image clicker</h3>
+    <img src="bkk.jpg" alt="imgs" onclick="alert('image clicker!')" />
+    <h2>with fucntion</h2>
+    <h1 id="cl"></h1>
+    <img src="bkk.jpg" alt="imgs"" onclick="pick()">
+    <img src="bkk.jpg" alt="" onmouseover="src='./bkk-removebg-preview.png'" />
+
+    <!-- <div>
+      <h1>Events: Fields</h1>
+      <hr />
+      <h3>Email</h3>
+      <input
+        size="30"
+        id="email"
+        placeholder="Email"
+        type="text"
+        onfocus="changeBg()"
+        onblur="blur()"
+      />
+    </div> -->
+    <!-- <div>
+      Name:<br />
+      <input
+        id="name"
+        type="text"
+        size="30"
+        onFocus="this.style.backgroundColor='yellow';"
+        onBlur="thir()"
+      />
+    </div> -->
+      <h1>This is form</h1>
+
+      <!-- <form onsubmit="f(event)">
+        <label for="email">Email:</label>
+        <input type="text" placeholder="enter name..." id="name"/><br>
+        <input type="email" placeholder="enter email..." id="email"/><br>
+        <input type="password" placeholder="enter password..." id="password"/><br>
+        <input type="submit" value="Submit">
+      </form> -->
+    
+    <!-- <form onsubmit="ff(event)">
+      <label for="email">Email:</label>
+      <input type="email" placeholder="enter email..." id="email" required>
+      <input type="submit" value="Submit">
+    </form> -->
+
+    <!-- <form onsubmit="f(event)">
+      <label for="email">Email:</label>
+      <input type="email" placeholder="enter email..." id="email"/><br>
+      <label for="name">Name:</label>
+      <input type="text" placeholder="enter name..." id="name"/><br>
+      <label for="password">Password:</label>
+      <input type="password" placeholder="enter password..." id="password"/><br>
+      <input type="submit" value="Submit">
+    </form> -->
+
+    <form onsubmit="f(event)">
+      <label for="email">Email:</label>
+      <input type="email" placeholder="enter email..." id="email" name="email" /><br>
+      <label for="name">Name:</label>
+      <input type="text" placeholder="enter name..." id="name" name="name" /><br>
+      <label for="password">Password:</label>
+      <input type="password" placeholder="enter password..." id="password" name="password" /><br>
+      <input type="submit" value="Submit">
+    </form>
+
+    <form>
+      ZIP:<br>
+      <input type="text" id="zip" onBlur="fillCity();"><br>
+      City:<br>
+      <input type="text" id="city">
+      </form>
+      <h2>Second form handling</h2>
+      <!-- <form onsubmit="handleForm(event)">
+        <input type="text" name="name" placeholder="name--"><br>
+        <input type="email" name="email" placeholder="email--"><br>
+        <input type="password" name="password" placeholder="password"><br>
+        <button>Register</button>
+      </form> -->
+      <form onsubmit="handleForm(event)">
+        <input type="text" name="name" placeholder="name--"><br>
+        <input type="email" name="email" placeholder="email--"><br>
+        <input type="password" name="password" placeholder="password"><br>
+        <input type="submit"/>
+      </form>
+
+    <script src="main.js"></script>
+  </body>
+</html>

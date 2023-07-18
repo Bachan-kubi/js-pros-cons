@@ -1,0 +1,28 @@
+.hidden{
+    display: none;
+}
+.hiden{
+    display: none;
+}
+img{
+    cursor: pointer; 
+    transition: 0.3s ease;
+}
+.p{
+    max-width: 50%;
+}
+.small{
+    width: 20%;
+}
+.big{
+    width: 50%;
+    transition: 0.3s ease;
+    border-radius: 50%;
+}
+.t{
+    font-size: 1em;
+    cursor: pointer;
+}
+.txt-two{
+    font-size: 2em;
+}
