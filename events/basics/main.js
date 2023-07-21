@@ -75,3 +75,13 @@ function handleForm(e){
   }
   console.log(name, email, password);
 }
+
+
+// event delegation
+
+let div = document.querySelector('div');
+div.addEventListener('click', function(e){
+  if(e.target.tagName === 'BUTTON'){
+    console.log(e.target.innerText);
+  }
+})

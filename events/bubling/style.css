@@ -1,0 +1,14 @@
+body{
+    padding: 20px;
+    background-color: red;
+}
+.div-one{
+    padding: 20px;
+    background-color: aqua;
+    max-width: max-content;
+}
+span{
+    display: block;
+    padding: 20px;
+    background-color: yellow;
+}
