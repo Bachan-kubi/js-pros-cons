@@ -15,6 +15,9 @@ function showThumbnail(href, title){
     console.log(largeImg.src)
 };
 
+function noed(){
+    console.log('jfkdj')
+}
 
 // The provided code runs without accessing the thumbs and largeImg IDs directly in JavaScript because it uses event delegation. In this code, the event listener is not attached directly to the thumbs and largeImg elements. Instead, it is attached to a common ancestor of all the thumbnail images (thumbs), and the event.target property is used to determine which specific thumbnail was clicked.
 
