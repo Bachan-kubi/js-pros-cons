@@ -124,7 +124,8 @@
 // replace and replace all
 
 let myName = 'Bachan kobi';
-console.log(myName.replace('kobi', "kubi"))
+console.log(myName.replace('kobi', "kubi"));
+
 
 
 
