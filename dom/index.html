@@ -29,11 +29,20 @@
     </div>
     <div>
         <h1>Insert Adjacent HTML!</h1>
-        <ul id="list">
-            <li>CSS</li>
-        </ul>
+        <div id="list">
+            <ul>
+                <li>CSS</li>
+                <li>HTML</li>
+            </ul>
+        </div>
     </div>
-   
+   <div>
+    <input type="text" id="username" placeholder="enter name" checked>
+    <input type="checkbox" id="chkAccept" checked> Accept
+    <input type="button" value="Save" onclick="alert(event.type)">
+    <input type="button" value="Save" onclick="alert(this.value)">
+    <input type="button" value="Save" onclick="alert(value)">
+   </div>
 
     <script src="textContent.js"></script>
 </body>

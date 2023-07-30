@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+.container ul {
+    list-style: none;
+}
+
+.container ul li {
+    padding: 2rem;
+    font-size: 2rem;
+}
+
+.container ul li:nth-child(even) {
+    background-color: #f4f4f4;
+    color: #2e302f
+}
+
+.container a {
+    color: black;
+    cursor: pointer
+}
+
+.container a:hover {
+    text-decoration: underline;
+}
+
+.container ul li.special {
+    background-color: #f9dc5c;
+    color: #2e302f;
+    border: solid 2px #2e302f;
+}
+
+.btn {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 3%;
+    font-size: 2rem;
+    background: #007bff;
+    border-bottom: 2px solid #007bff;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    color: #fff;
+}
+
+.btn:hover {
+    background: #0069d9;
+    cursor: pointer;
+}
+input[type='password']{
+    /* background-color: red; */
+    padding: 10px;
+    width: 150px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+input[type='text']{
+    background-color: red;
+    padding: 10px;
+    width: 150px;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+}
+#menu{
+    margin: 20px;
+}
+ul li{
+    list-style: none;
+    margin: 30px;
+}
+#home{
+    cursor: pointer;
+    background-color: teal;
+    margin: 10px;
+    padding: 10px;
+}
+#dashboard{
+    cursor: pointer;
+    background-color: teal;
+    padding: 10px;
+}
+#report{
+    cursor: pointer;
+    background-color: teal;
+    margin: 20px;
+    padding: 5px;
+}

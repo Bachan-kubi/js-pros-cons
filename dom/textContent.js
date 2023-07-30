@@ -40,12 +40,27 @@
 
 // Adjacent HTML method
 
-let list = document.getElementById('list');
-console.log(list)
+// let list = document.getElementById('list');
+// console.log(list)
 
-list.insertAdjacentHTML("beforebegin", '<h2>Web Technologies</h2>')
-list.insertAdjacentHTML("beforebegin", '<p>Lets learn in an group to overcome the matters</p>')
-list.insertAdjacentHTML('afterbegin', '<li>React</li>')
-list.insertAdjacentHTML('afterbegin', '<li>Vue</li>')
-list.insertAdjacentHTML('beforeend', '<li>Vue</li>')
-list.insertAdjacentHTML('afterend', '<h2>Thank you</h2>')
+// list.insertAdjacentHTML("beforebegin", '<h2>Web Technologies</h2>')
+// list.insertAdjacentHTML("beforebegin", '<p>Lets learn in an group to overcome the matters</p>')
+// list.insertAdjacentHTML('afterbegin', '<li>React</li>')
+// list.insertAdjacentHTML('afterbegin', '<li>Vue</li>')
+// list.insertAdjacentHTML('beforeend', '<li>Vue</li>')
+// list.insertAdjacentHTML('afterend', '<h2>Thank you</h2>')
+
+// let list = document.getElementById('list');
+// let menu = list.cloneNode(true);
+// menu.id = 'cloned';
+// document.body.appendChild(menu);
+
+let att = document.getElementById('username');
+att.setAttribute('value', 'ami')
+
+for(let at of att.attributes){
+    console.log(`${at.name} = ${at.value}`);
+};
+
+let chkAccept = document.getElementById('chkAccept');
+console.log(chkAccept.checked)
