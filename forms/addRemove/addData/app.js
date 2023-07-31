@@ -18,19 +18,30 @@ addButton.addEventListener("click", (e) => {
   }
 });
 
-removeButton.addEventListener("click", (e) => {
+// removeButton.addEventListener("click", (e) => {
+//   e.preventDefault();
+//   let selected = list.options[list.selectedIndex];
+  
+//   if (selected) {
+//     let shouldRemove = confirm("Are you Sure?");
+//     if (shouldRemove) {
+//       selected.remove(list.selectedIndex);
+//       alert('Remove successfully!');
+//     }
+//   } else {
+//     alert("Please select one!");
+//   }
+// });
+
+removeButton.addEventListener('click', (e)=>{
   e.preventDefault();
   let selected = list.options[list.selectedIndex];
-  
-  if (selected) {
-    let shouldRemove = confirm("Are you Sure?");
-    if (shouldRemove) {
-      selected.remove(list.selectedIndex);
-    }
-  } else {
-    alert("Please select one!");
+  if(selected){
+    let shouldRemove= confirm('Are you sure?');
+    shouldRemove ? (selected.remove(list.selectedIndex), alert('Remove successfully!')): null;
   }
 });
+
 removeAll.addEventListener('click', (e)=>{
   let shouldRemoveAll = confirm('Do you want to remove all?');
   if(shouldRemoveAll){
