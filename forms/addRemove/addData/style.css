@@ -11,6 +11,13 @@
     border-radius: 5px;
     box-shadow: 5px 5px rgb(204, 204, 228);
 }
+h2{
+    text-align: center;
+    margin-top: 25px;
+    color: teal;
+    font-size: 30px;
+
+}
 label{
     font-size: 20px;
     color: teal;
