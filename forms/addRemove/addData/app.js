@@ -31,12 +31,11 @@ removeButton.addEventListener("click", (e) => {
     alert("Please select one!");
   }
 });
-
 removeAll.addEventListener('click', (e)=>{
   let shouldRemoveAll = confirm('Do you want to remove all?');
   if(shouldRemoveAll){
     while(list.options.length>0){
       list.remove(0);
     }
-  }
-})
+  };
+});
