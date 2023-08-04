@@ -1,0 +1,15 @@
+ul li{
+    list-style: none;
+}
+ul{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 250px);
+    background-color: rgb(36, 189, 189);
+}
+ul li{
+    background-color: teal;
+    padding: 10px;
+    margin: 10px;
+    color: wheat;
+    font-size: 22px;
+}
