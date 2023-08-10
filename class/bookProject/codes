@@ -1,0 +1,53 @@
+class Book {
+  constructor(title, author, ISBN) {
+    this.title = title;
+    this.author = author;
+    this.ISBN = ISBN;
+  }
+
+  displayInfo() {
+    return `${this.title} by ${this.author} (ISBN: ${this.ISBN})`;
+  }
+}
+
+class Library {
+  constructor() {
+    this.books = [];
+  }
+
+  addBook(book) {
+    this.books.push(book);
+  }
+
+  listBooks() {
+    let bookList = '';
+    for (const book of this.books) {
+      bookList += book.displayInfo() + '<br>';
+    }
+    return bookList;
+  }
+}
+
+const myLibrary = new Library();
+
+
+const bookForm = document.getElementById('book-form');
+const bookListDiv = document.getElementById('book-list');
+
+bookForm.addEventListener('submit', function (event) {
+  event.preventDefault();
+  
+  const title = document.getElementById('title').value;
+  const author = document.getElementById('author').value;
+  const ISBN = document.getElementById('isbn').value;
+
+  const newBook = new Book(title, author, ISBN);
+  myLibrary.addBook(newBook);
+
+  updateBookList();
+  bookForm.reset();
+});
+
+function updateBookList() {
+  bookListDiv.innerHTML = myLibrary.listBooks();
+}

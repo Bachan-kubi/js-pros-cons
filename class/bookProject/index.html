@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book adding Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h2>Please add your book</h2>
+            <form>
+                <label for="title">Title:</label><br>
+                <input type="text" id="title" placeholder="Enter Title.." required><br>
+                <label for="author">Author:</label><br>
+                <input type="text" id="author" placeholder="Enter Author Name.." required><br>
+                <label for="isbn">ISBN:</label><br>
+                <input type="text" id="isbn" placeholder="Enter ISBN.." required><br>
+                <label for="year">Publish Year:</label><br>
+                <input type="text" id="year" placeholder="Enter Publish Year.." required><br>
+                <button id="addBooks" type="submit">Add Books</button>
+            </form>
+            <button id="showBooks">Show Books</button>
+        </div>
+    </div>
+    
+    <script src="bookProject.js"></script>
+</body>
+</html>

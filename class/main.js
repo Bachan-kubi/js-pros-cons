@@ -48,31 +48,72 @@
 // let rubi = new Human('ubi', 'isiri');
 // console.log(rubi.sayHi());
 
-class Human {
-  constructor(name, address){
-    this.name = name;
-    this.address = address;
-  }
+// class Human {
+//   constructor(name, address){
+//     this.name = name;
+//     this.address = address;
+//   }
 
-  sayHi(){
-    return 'Hello ' + this.name + ', ' + this.address;
-  }
-}
+//   sayHi(){
+//     return 'Hello ' + this.name + ', ' + this.address;
+//   }
+// }
 
-let Bachan = new Human('obi', 'birisiri');
-let rubi = new Human('ubi', 'Uraisiri');
+// let Bachan = new Human('obi', 'birisiri');
+// let rubi = new Human('ubi', 'Uraisiri');
 
-// Get the output div from the DOM
-const outputDiv = document.getElementById('output');
+// // Get the output div from the DOM
+// const outputDiv = document.getElementById('output');
 
-// Create a new paragraph element to hold the result
-const resultParagraph = document.createElement('h2');
+// // Create a new paragraph element to hold the result
+// const resultParagraph = document.createElement('h2');
 
-// Set the text content of the paragraph to the result of the sayHi method
-resultParagraph.innerHTML += Bachan.sayHi();
-resultParagraph.innerHTML += rubi.sayHi();
+// // Set the text content of the paragraph to the result of the sayHi method
+// resultParagraph.innerHTML += Bachan.sayHi();
+// resultParagraph.innerHTML += rubi.sayHi();
 
-// Append the paragraph to the output div
-outputDiv.appendChild(resultParagraph);
+// // Append the paragraph to the output div
+// outputDiv.appendChild(resultParagraph);
 
 
+// class Book {
+//   constructor(title, author, ISBN) {
+//     this.title = title;
+//     this.author = author;
+//     this.ISBN = ISBN;
+//   }
+
+//   displayInfo() {
+//     return `Book Name: ${this.title} by ${this.author}, (ISBN: ${this.ISBN})`;
+//   }
+// }
+
+// class Library {
+//   constructor() {
+//     this.books = [];
+//   }
+
+//   addBook(book) {
+//     this.books.push(book);
+//   }
+
+//   listBooks() {
+//     for (const book of this.books) {
+//       console.log(book.displayInfo());
+//     }
+//   }
+// }
+// const myLibrary = new Library();
+
+// function addBook() {
+//   const title = prompt("Enter the book's title:");
+//   const author = prompt("Enter the author's name:");
+//   const ISBN = prompt("Enter the ISBN:");
+
+//   const newBook = new Book(title, author, ISBN);
+//   myLibrary.addBook(newBook);
+// }
+
+// function listBooks() {
+//   myLibrary.listBooks();
+// }
