@@ -1,0 +1,133 @@
+Project: Task Manager
+
+Requirements:
+
+User Interface:
+
+Create an HTML form with input fields for task name, description, and due date.
+Display a list of tasks on the webpage.
+Provide buttons to add tasks, mark tasks as completed, and delete tasks.
+
+Task Class:
+Create a Task class with properties such as name, description, dueDate, and completed.
+Implement a method to toggle the task's completion status.
+
+Task Manager Class:
+Create a TaskManager class to manage tasks.
+Implement methods to add tasks, remove tasks, and mark tasks as completed.
+
+Interaction:
+Use event listeners to capture form submissions and button clicks.
+Instantiate a TaskManager object to manage tasks.
+Add tasks using the form input values.
+Display tasks in the UI, indicating their completion status.
+
+Persistence:
+Store tasks in an array within the TaskManager class.
+Use local storage to save and retrieve tasks, ensuring they persist across page reloads.
+
+Validation:
+Validate that task name, description, and due date are not empty before adding a task.
+Ensure the due date is a valid date format.
+
+User Feedback:
+Provide user-friendly messages for successful task addition, completion, and deletion.
+Show error messages for invalid inputs or actions.
+
+Styling:
+Apply basic CSS to style the UI components, making it visually appealing and user-friendly.
+
+Responsive Design:
+Make sure the application is responsive and works well on different screen sizes.
+Optional Features:
+
+Add sorting and filtering options for tasks (e.g., sort by due date or completion status).
+Implement editing tasks to allow users to update task details.
+Provide a clear button to clear all completed tasks.
+Enhance the task display with color-coded or visual indicators for different states (e.g., overdue, completed).
+Project Structure:
+
+index.html: Contains the HTML structure and UI elements.
+styles.css: Contains the CSS for styling the UI.
+app.js: Contains the JavaScript code for classes, interactions, and logic.
+
+
+class Task {
+    constructor(name, description, dueDate) {
+        this.name = name;
+        this.description = description;
+        this.dueDate = dueDate;
+        this.completed = false;
+    }
+
+    toggleCompleted() {
+        this.completed = !this.completed;
+    }
+}
+
+class TaskManager {
+    constructor() {
+        this.tasks = [];
+    }
+
+    addTask(task) {
+        this.tasks.push(task);
+    }
+
+    removeTask(index) {
+        this.tasks.splice(index, 1);
+    }
+
+    markTaskCompleted(index) {
+        this.tasks[index].toggleCompleted();
+    }
+}
+
+const taskForm = document.getElementById('task-form');
+const taskList = document.getElementById('task-list');
+
+const taskManager = new TaskManager();
+
+taskForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const name = document.getElementById('task-name').value;
+    const description = document.getElementById('task-description').value;
+    const dueDate = document.getElementById('due-date').value;
+
+    const task = new Task(name, description, dueDate);
+    taskManager.addTask(task);
+
+    updateTaskList();
+    taskForm.reset();
+});
+
+function updateTaskList() {
+    taskList.innerHTML = '';
+
+    taskManager.tasks.forEach((task, index) => {
+        const taskDiv = document.createElement('div');
+        taskDiv.classList.add('task');
+        taskDiv.innerHTML = `
+            <h3>${task.name}</h3>
+            <p>${task.description}</p>
+            <p>Due Date: ${task.dueDate}</p>
+            <button class="complete-btn" onclick="toggleCompleted(${index})">${task.completed ? 'Mark Incomplete' : 'Mark Complete'}</button>
+            <button class="delete-btn" onclick="deleteTask(${index})">Delete</button>
+        `;
+
+        taskList.appendChild(taskDiv);
+    });
+}
+
+function toggleCompleted(index) {
+    taskManager.markTaskCompleted(index);
+    updateTaskList();
+}
+
+function deleteTask(index) {
+    taskManager.removeTask(index);
+    updateTaskList();
+}
+
+updateTaskList();
