@@ -19,7 +19,7 @@ class TaskManager{
         this.tasks.push(task);
     }
     removeTask(index){
-        this.tasks.splice(index, 1)
+        this.tasks.splice(index, 1);
     }
     markTaskCompleted(index){
         this.tasks[index].toggleCompleted();
@@ -70,8 +70,8 @@ function toggleCompletedTask(index){
 }
 
 function deleteTask(index){
-    myManager.removeTask(index);
-    updateTask();
+        myManager.removeTask(index);
+        updateTask();
 }
 
 // updateTask();
