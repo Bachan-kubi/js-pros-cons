@@ -7,4 +7,4 @@
 Promise.resolve()
 .then(()=>console.log('done'))
 .then(()=>console.log('ok'))
-console.log('why')
+console.log('why');
