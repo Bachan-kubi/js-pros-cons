@@ -24,18 +24,20 @@ fun();
 // dataStore();
 
 //
-(async () => {
-    const data = 'https://jsonplaceholder.typicode.com/posts';
-    try {
-        const response = await fetch(data);
-        const result = await response.json();
-        console.log(result);
-        result.forEach(r=>console.log(r.body))
-        //-2 result.map(r=>console.log(r))
-        //-3 for(let r of result){
-        //     console.log(r)
-        // }
-    } catch (error) {
-        console.error('An error occurred:', error);
-    }
-})();
+// (async () => {
+//     const data = 'https://jsonplaceholder.typicode.com/posts';
+//     try {
+//         const response = await fetch(data);
+//         const result = await response.json();
+//         console.log(result);
+//         result.forEach(r=>console.log(r.body))
+//         //-2 result.map(r=>console.log(r))
+//         //-3 for(let r of result){
+//         //     console.log(r)
+//         // }
+//     } catch (error) {
+//         console.error('An error occurred:', error);
+//     }
+// })();
+
+console.log(`who is best?`)
