@@ -20,7 +20,7 @@ let reg = /\d/g;
 let j = str.match(reg).join('')
 console.log(j)
 
-import { hi } from "../asyncAwait/export";
+import { hi } from "../../asyncAwait/export";
 
 console.log(hi(miti));
 

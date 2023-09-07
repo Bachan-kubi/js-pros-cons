@@ -1,0 +1,77 @@
+// Project: Multiplication Table Generator
+
+// Objective: Create a JavaScript program that generates a multiplication table based on user input using different types of loops.
+
+// Features:
+
+// Take user input for the number they want the multiplication table for.
+// Generate and display the multiplication table using various loop types.
+// Allow the user to choose between different types of loops (for loop, while loop, do-while loop).
+// Provide an option to exit the program.
+
+// // Function to display the multiplication table using a specific loop type
+// function generateMultiplicationTable(number, loopType) {
+//   console.log(`Multiplication Table for ${number} using ${loopType} loop:`);
+
+//   switch (loopType) {
+//     case 'for':
+//       for (let i = 1; i <= 10; i++) {
+//         console.log(`${number} * ${i} = ${number * i}`);
+//       }
+//       break;
+//     case 'while':
+//       let i = 1;
+//       while (i <= 10) {
+//         console.log(`${number} * ${i} = ${number * i}`);
+//         i++;
+//       }
+//       break;
+//     case 'do-while':
+//       let j = 1;
+//       do {
+//         console.log(`${number} * ${j} = ${number * j}`);
+//         j++;
+//       } while (j <= 10);
+//       break;
+//     default:
+//       console.log('Invalid loop type');
+//   }
+// }
+
+// // Main program loop
+// while (true) {
+//   console.log('\nChoose an option:');
+//   console.log('1. Generate Multiplication Table');
+//   console.log('2. Exit');
+  
+//   const choice = prompt('Enter your choice: ');
+
+//   if (choice === '1') {
+//     const number = parseInt(prompt('Enter a number: '));
+//     console.log('Select a loop type:');
+//     console.log('1. for loop');
+//     console.log('2. while loop');
+//     console.log('3. do-while loop');
+    
+//     const loopChoice = prompt('Enter your loop choice: ');
+
+//     switch (loopChoice) {
+//       case '1':
+//         generateMultiplicationTable(number, 'for');
+//         break;
+//       case '2':
+//         generateMultiplicationTable(number, 'while');
+//         break;
+//       case '3':
+//         generateMultiplicationTable(number, 'do-while');
+//         break;
+//       default:
+//         console.log('Invalid loop choice');
+//     }
+//   } else if (choice === '2') {
+//     console.log('Exiting the program.');
+//     break;
+//   } else {
+//     console.log('Invalid choice');
+//   }
+// }
