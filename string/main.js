@@ -12,3 +12,16 @@ console.log(newP);
 let gbc = 'garo baptist convention';
 let s = gbc.substring(2, 5);
 console.log(s)
+
+console.log(' hellow '.trim());
+
+function findOccuranceOfSubstring(string, substring){
+    let occuranceCount = 0, position=0;
+    while(position=string.indexOf(substring, position)!==-1){
+        occuranceCount++;
+        position+=substring.length;
+    }
+    return occuranceCount;
+}
+
+

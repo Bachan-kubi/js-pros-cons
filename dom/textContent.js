@@ -55,12 +55,14 @@
 // menu.id = 'cloned';
 // document.body.appendChild(menu);
 
-let att = document.getElementById('username');
-att.setAttribute('value', 'ami')
+// let att = document.getElementById('username');
+// att.setAttribute('value', 'ami')
 
-for(let at of att.attributes){
-    console.log(`${at.name} = ${at.value}`);
-};
+// for(let at of att.attributes){
+//     console.log(`${at.name} = ${at.value}`);
+// };
 
-let chkAccept = document.getElementById('chkAccept');
-console.log(chkAccept.checked)
+// let chkAccept = document.getElementById('chkAccept');
+// console.log(chkAccept.checked)
+
+console.dir(document.location.pathname);
