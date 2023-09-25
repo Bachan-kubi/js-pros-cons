@@ -24,3 +24,32 @@
 // }
 // console.log('outside loop!');
 
+
+
+var name = 'Zonayed';
+
+function first() {
+   var welcome = 'Hello ';
+   second();
+   console.log(welcome + name);
+}
+
+function second() {
+   var welcome2 = 'Hi! ';
+   third();
+   console.log(welcome2 + name);
+}
+
+function third() {
+   var welcome3 = 'Hey! ';
+   console.log(welcome3 + name);
+}
+
+first();
+
+let a = 10;
+let b = 20;
+let c = a<b ? 100: 200;
+console.log(c)
+
+
