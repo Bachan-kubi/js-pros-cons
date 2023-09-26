@@ -74,3 +74,42 @@
 
 // // myObj.fullName().f.call(myObj);
 
+
+
+// function thisMia(){
+//     console.log(this)
+// }
+// thisMia();
+
+let ami = {
+    name: 'kubi',
+    age: 20,
+    country: 'dhaka',
+    fullAmi: function(){
+        console.log(`My name is ${this.name}, age ${this.age} and ${this.country}`)
+    },
+    fullStory: {
+            name: 'rupa',
+            age: 20,
+            msg: function(){
+                console.log(`we r ${this.name}, ${this.age}`)
+            }
+
+    }
+}
+ami.fullStory.msg();
+
+let btn = document.getElementById("btn");
+// btn.onclick = function(){
+//     console.log('I got first click!');
+// }
+btn.addEventListener('click', ()=>{
+    console.log('clickable button!');
+});
+
+let link = document.getElementById('link');
+link.addEventListener('click', (e)=>{
+    e.preventDefault();
+    console.log('ok got i')
+})
+
