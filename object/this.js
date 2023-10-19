@@ -111,5 +111,5 @@ let link = document.getElementById('link');
 link.addEventListener('click', (e)=>{
     e.preventDefault();
     console.log('ok got i')
-})
+});
 

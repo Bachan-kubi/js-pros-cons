@@ -14,15 +14,17 @@
 // let r = /\s\w\w\w\w\d/;
 // console.log(words.match(r));
 
-let str = '+7(444)-4568797979';
+// let str = '+7(444)-4568797979';
 
-let reg = /\d/g;
-let j = str.match(reg).join('')
-console.log(j)
+// let reg = /\d/g;
+// let j = str.match(reg).join('')
+// console.log(j)
 
-import { hi } from "../../asyncAwait/export";
+// import { hi } from "../../asyncAwait/export";
 
-console.log(hi(miti));
+// console.log(hi(miti));
+
+
 
 
 

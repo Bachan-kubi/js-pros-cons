@@ -60,3 +60,7 @@ console.log(planOne.calcAnnual(.8));
 
 // constructor
 
+const s = [10, 15, 10];
+s=[20, 8, 9]
+console.log(s);
+
