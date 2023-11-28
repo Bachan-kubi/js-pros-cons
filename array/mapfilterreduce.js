@@ -13,24 +13,32 @@ let a = arr.map(item=>{
 console.log(a);
 
 let myArr = [];
-for(let i = 0; i<arr.length; i++){
-    myArr.push(arr[i]* arr[i]);
-}
-console.log(myArr);
+// for(let i = 0; i<arr.length; i++){
+//     myArr.push(arr[i]* arr[i]);
+// }
+// console.log(myArr);
 
-// filter method
-let fil = arr.filter((i, index, arr)=>{
+// // filter method
+// let fil = arr.filter((i, index, arr)=>{
     
-    console.log("item: ", i, "index: ", index, "Array ", arr)
-})
-// console.log(fil);
+//     console.log("item: ", i, "index: ", index, "Array ", arr)
+// })
+// // console.log(fil);
 
-let rduce = [1, 2, 3];
-let cal = rduce.reduce((total, item)=>{
-    console.log(total, item)
-    return(
-        total += item
-    )
-}, 0);
-console.log(cal);
+// let rduce = [1, 2, 3];
+// let cal = rduce.reduce((total, item)=>{
+//     console.log(total, item)
+//     return(
+//         total += item
+//     )
+// }, 0);
+// console.log(cal);
 
+const users = [
+    { name: 'John', age: 34 },
+    { name: 'Amy', age: 20 },
+    { name: 'camperCat', age: 10 }
+  ];
+
+let newUser = users.map((user)=>{console.log(user.name)});
+console.log(newUser);
