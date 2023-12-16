@@ -24,8 +24,21 @@
 
 // mutation(["hello", "hey"]);
 
-function chunkArrayInGroups(arr, size) {
-  
-}
+let arr = [
+    {id: 1, name: "ki"},
+    {id: 2, name: "kip"},
+    {id: 3, name: "kik"},
+    {id: 4, name: "kill"},
+];
 
-chunkArrayInGroups(["a", "b", "c", "d"], 2);
+let newA = arr.filter(f=>{
+    return (f.id === 4)
+});
+console.log(newA)
+
+let mapi = ['kill', 'bachan', 'hisabnaiamar'];
+
+let nMapi = mapi.map(m=>{
+    return (m !== 'kill');
+});
+console.log(nMapi)

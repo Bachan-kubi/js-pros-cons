@@ -7,11 +7,11 @@ const renderTask = ()=>{
 
     showTasks.forEach((task, index)=>{
         const li = document.createElement('li');
-        li.innerHTML = `${task} <button onClick="removeTask(${index})">Romove Task</button>`;
+        li.innerHTML = `${task} <button class="btn" onClick="removeTask(${index})">Romove Task</button>`;
         tasks.appendChild(li);
     })
 }
-renderTask();
+
 const addTask = ()=>{
     const allTasks = document.getElementById('allTask');
     const newValue = allTasks.value.trim();
@@ -27,3 +27,5 @@ const removeTask = (index)=>{
     showTasks.splice(index, 1);
     renderTask();
 }
+
+renderTask();

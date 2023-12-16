@@ -24,7 +24,6 @@
 
 // console.log(hi(miti));
 
-
-
-
+const str = 'bHellow';
+console.log(/str/b);
 
