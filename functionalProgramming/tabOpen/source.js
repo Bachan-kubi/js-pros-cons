@@ -35,9 +35,39 @@
 //     ">": "&gt;",
 //     '"': "&quot;",
 //     "'": "&apos;",
-//   };  
+//   };
 
 //   return str.split("").map(entity=>htmlEntities[entity]|| entity).join("");
 // }
 
 // convertHTML("Dolce & Gabbana");
+
+// function sumFibs(num) {
+//   let prev = 0;
+//   let current = 1;
+//   let result = 0;
+//   while (current <= num) {
+//     if (current % 2 !== 0) {
+//       result += current;
+//     }
+//     current+=prev;
+//     prev = current-prev;
+//   }
+//   console.log(result);
+//   return result;
+// }
+
+// sumFibs(4);
+
+function sumPrimes(num) {
+  let isPrime = [];
+  for(let i=2;i<=num;i++){
+    if(isPrime.every(prime=>i%prime !==0))
+    isPrime.push(i);
+  }
+  let p = isPrime.reduce((sum, prime)=>sum +prime, 0);
+  console.log(p)
+  return isPrime;
+}
+
+sumPrimes(5);
