@@ -61,12 +61,11 @@
 
 function sumPrimes(num) {
   let isPrime = [];
-  for(let i=2;i<=num;i++){
-    if(isPrime.every(prime=>i%prime !==0))
-    isPrime.push(i);
+  for (let i = 2; i <= num; i++) {
+    if (isPrime.every((prime) => i % prime !== 0)) isPrime.push(i);
   }
-  let p = isPrime.reduce((sum, prime)=>sum +prime, 0);
-  console.log(p)
+  let p = isPrime.reduce((sum, prime) => sum + prime, 0);
+  console.log(p);
   return isPrime;
 }
 
