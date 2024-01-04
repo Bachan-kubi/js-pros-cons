@@ -2,30 +2,42 @@
 
 // For example, if the first argument is [{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }], and the second argument is { last: "Capulet" }, then you must return the third object from the array (the first argument), because it contains the name and its value, that was passed on as the second argument.
 
+// function whatIsInAName(collection, source) {
+//   let collectionMatches = [];
+//   for (let i = 0; i <collection.length; i++) {
+//     let foundMismatched = false;
+//     for (let sourceProps in source) {
+//       if (collection[i][sourceProps] !== source[sourceProps]) {
+//         foundMismatched = true;
+//       }
+//     }
+//     if (!foundMismatched) {
+//       collectionMatches.push(collection[i]);
+//     }
+//   }
+//   console.log(collectionMatches);
+//   return collectionMatches;
+// }
 
+// whatIsInAName(
+//   [
+//     { first: "Romeo", last: "Montague" },
+//     { first: "Mercutio", last: null },
+//     { first: "Tybalt", last: "Capulet" },
+//   ],
+//   { last: "Capulet" }
+// );
 
-function whatIsInAName(collection, source) {
-  let collectionMatches = [];
-  for (let i = 0; i <collection.length; i++) {
-    let foundMismatched = false;
-    for (let sourceProps in source) {
-      if (collection[i][sourceProps] !== source[sourceProps]) {
-        foundMismatched = true;
-      }
-    }
-    if (!foundMismatched) {
-      collectionMatches.push(collection[i]);
-    }
-  }
-  console.log(collectionMatches);
-  return collectionMatches;
-}
+// function convertHTML(str) {
+//   const htmlEntities = {
+//     "&": "&amp;",
+//     "<": "&lt;",
+//     ">": "&gt;",
+//     '"': "&quot;",
+//     "'": "&apos;",
+//   };  
 
-whatIsInAName(
-  [
-    { first: "Romeo", last: "Montague" },
-    { first: "Mercutio", last: null },
-    { first: "Tybalt", last: "Capulet" },
-  ],
-  { last: "Capulet" }
-);
+//   return str.split("").map(entity=>htmlEntities[entity]|| entity).join("");
+// }
+
+// convertHTML("Dolce & Gabbana");
